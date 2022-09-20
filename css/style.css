@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --background-color: rgb(193,62,62);
+  --btn-color: rgb(233,153,61);
+  --background: linear-gradient(139deg, rgba(193,62,62,1) 0%, rgba(230,179,50,1) 100%);
+}
+
+.container {
+  width: 100%;
+  background-color: var(--background);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--background);
+}
+
+.container h1.heading {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 50px 0px;
+}
+
+.container .todo__app {
+  width: 500px;
+  padding: 20px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0px 0px 23px 9px rgba(27, 27, 27, 0.75);
+  -webkit-box-shadow: 0px 0px 23px 9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 23px 9px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+.container .todo__app .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.container .todo__app .form input {
+  width: 90%;
+  padding: 13px;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.container .todo__app .form button.btnAdd {
+  padding: 13px;
+  outline: none;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+  color: var(--btn-color);
+}
+
+.container .todo__app .form button.btnAdd i {
+  font-size: 30px;
+  pointer-events: none;
+}
+
+.container .todo__app .form button.btnEdit {
+  padding: 13px;
+  outline: none;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+  color: #5acc5a;
+}
+
+.container .todo__app .form button.btnEdit i {
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.container .todo__app .resultTodo {
+  margin: 20px 0px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .todo__app .resultTodo .TodoList {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .todo__app .resultTodo .TodoList button.buttonDelete,
+.container .todo__app .resultTodo .TodoList button.buttonEdit {
+  display: inline-block;
+  padding: 15px;
+  outline: none;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+
+.container .todo__app .resultTodo .TodoList button.buttonDelete i {
+  color: var(--background-color);
+  font-size: 20px;
+  pointer-events: none;
+}
+
+.container .todo__app .resultTodo .TodoList button.buttonEdit i {
+  pointer-events: none;
+  color: #5acc5a;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 570px) {
+  .container {
+    width: 100%;
+    padding: 0px px;
+  }
+  .container .todo__app {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

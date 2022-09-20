@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$fontFamily :  'Poppins', sans-serif;
+:root{
+  --background-color : rgb(193,62,62);
+  --btn-color : rgb(233,153,61);
+  --background: linear-gradient(139deg, rgba(193,62,62,1) 0%, rgba(230,179,50,1) 100%);
+}
+.container{
+  width: 100%;
+  background-color: var(--background);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--background);
+  h1.heading{
+    text-align: center;
+    font-family: $fontFamily;
+    margin: 50px 0px;
+  }
+  .todo__app{
+    width: 500px;
+    padding: 20px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0px 0px 23px 9px rgba(27, 27, 27, 0.75);
+    -webkit-box-shadow: 0px 0px 23px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 23px 9px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    .form{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border-radius: 5px;
+      background-color: #fff;
+      input{
+        width: 90%;
+        padding: 13px;
+        border: none;
+        outline: none;
+        font-family: $fontFamily;
+        font-size: 15px;
+        border-radius: 5px;
+      }
+      button.btnAdd{
+        padding: 13px;
+        outline: none;
+        border: none;
+        background-color: unset;
+        cursor: pointer;
+        color: var(--btn-color);
+        i{
+          font-size: 30px;
+          pointer-events: none;
+        }
+      }
+      button.btnEdit{
+        padding: 13px;
+        outline: none;
+        border: none;
+        background-color: unset;
+        cursor: pointer;
+        color : rgb(90, 204, 90);
+        i{
+          font-size: 20px;
+          pointer-events: none;
+        }
+      }
+    }
+    .resultTodo{
+      margin: 20px 0px;
+      border-radius: 10px;
+      width: 100%;
+      background-color: #fff;
+      font-family: $fontFamily;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      .TodoList{
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button.buttonDelete,
+        button.buttonEdit{
+          display: inline-block;
+          padding: 15px;
+          outline: none;
+          border: none;
+          background-color: unset;
+          cursor: pointer;
+        }
+        button.buttonDelete{
+          i{
+            color: var(--background-color);
+            font-size: 20px;
+            pointer-events: none;
+          }
+        }
+        button.buttonEdit{
+          i{
+            pointer-events: none;
+            color : rgb(90, 204, 90);
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:570px) {
+  .container{
+    width: 100%;
+    padding: 0px px;
+    .todo__app{
+      width: 100%;
+    }
+  }
+}
